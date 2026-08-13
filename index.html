@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina | Dark & Light Mode Dashboard</title>
+    <!-- Google Fonts & FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Navigation Header -->
+        <header class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-cube"></i>
+                <span>LuminaUI</span>
+            </div>
+            
+            <!-- Creative Theme Switcher -->
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider">
+                        <i class="fa-solid fa-sun sun-icon"></i>
+                        <i class="fa-solid fa-moon moon-icon"></i>
+                    </div>
+                </label>
+            </div>
+        </header>
+
+        <!-- Main Dashboard Content -->
+        <main class="dashboard-grid">
+            <!-- Welcome Banner Card -->
+            <section class="card welcome-card">
+                <div class="welcome-text">
+                    <h1>Welcome back, Creator! 👋</h1>
+                    <p>Experience seamless visual transitions with our dynamic state management system. Toggle between light and dark themes effortlessly.</p>
+                    <button class="action-btn">Explore Analytics</button>
+                </div>
+                <div class="welcome-graphic">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+            </section>
+
+            <!-- Stat Cards -->
+            <section class="card stat-card">
+                <div class="stat-icon blue"><i class="fa-solid fa-users"></i></div>
+                <div class="stat-info">
+                    <h3>Total Users</h3>
+                    <p class="stat-value">24,502</p>
+                    <span class="stat-trend positive">+12% this week</span>
+                </div>
+            </section>
+
+            <section class="card stat-card">
+                <div class="stat-icon purple"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="stat-info">
+                    <h3>Conversion Rate</h3>
+                    <p class="stat-value">3.64%</p>
+                    <span class="stat-trend positive">+0.8% today</span>
+                </div>
+            </section>
+
+            <section class="card stat-card">
+                <div class="stat-icon orange"><i class="fa-solid fa-wallet"></i></div>
+                <div class="stat-info">
+                    <h3>Active Revenue</h3>
+                    <p class="stat-value">$48,250</p>
+                    <span class="stat-trend negative">-2.4% vs last month</span>
+                </div>
+            </section>
+
+            <!-- Activity Table Card -->
+            <section class="card table-card">
+                <h3>Recent System Activities</h3>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Module</th>
+                               <th>Status</th>
+                                <th>Timestamp</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Authentication Service</td>
+                                <td><span class="badge success">Active</span></td>
+                                <td>2 mins ago</td>
+                            </tr>
+                            <tr>
+                                <td>Database Backup</td>
+                                <td><span class="badge warning">Pending</span></td>
+                                <td>45 mins ago</td>
+                            </tr>
+                            <tr>
+                                <td>API Gateway Routing</td>
+                                <td><span class="badge success">Active</span></td>
+                                <td>2 hours ago</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
